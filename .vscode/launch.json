@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Classes",
+            "request": "launch",
+            "mainClass": "Classes",
+            "projectName": "Santander_Code_2024_8172ae5a"
+        },
+        {
+            "type": "java",
+            "name": "Introducao",
+            "request": "launch",
+            "mainClass": "Introducao",
+            "projectName": "Santander_Code_2024_8172ae5a"
+        }
+    ]
+}
