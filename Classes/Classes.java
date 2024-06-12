@@ -1,7 +1,8 @@
-import Animais.Cachorro;
-import Animais.Gato;
-import Animais.Passaro;
-import Loja.PetShop;
+package Classes;
+import Classes.Animais.Cachorro;
+import Classes.Animais.Gato;
+import Classes.Animais.Passaro;
+import Classes.Loja.PetShop;
 
 public class Classes {
     public static void main(String[] args) {

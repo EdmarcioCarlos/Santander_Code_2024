@@ -1,11 +1,10 @@
-package Animais;
+package Classes.Animais;
 
-public class Passaro extends Animal{
-
+public class Gato extends Animal{
 
 
     /*Construtor */
-    public Passaro(String nome,String cor,float peso, String humor)
+    public Gato(String nome,String cor,float peso, String humor)
     {
         super(nome, cor, peso, humor);
         this.nome = nome;
@@ -13,8 +12,7 @@ public class Passaro extends Animal{
         this.peso = peso;
         this.humor = humor;
     }
-
-    //#region(Gets e Sets)
+    //#region (Get e Sets)
     public String getNome()
     {
         return this.nome;
@@ -34,6 +32,7 @@ public class Passaro extends Animal{
     {
         this.cor = cor;
     }
+
     public Float getPeso()
     {
         return this.peso;
@@ -54,13 +53,13 @@ public class Passaro extends Animal{
         this.humor = humor;
     }
     //#endregion
-
-    //#region (Metodos)
+    
+    //#region(Metodos)
     @Override
     public void soar()
     {
         System.out.println("--------------------------");
-        System.out.println("Criiii !!!");
+        System.out.println("Miauuuu!!!");
         System.out.println("--------------------------");
     }
     //#endregion

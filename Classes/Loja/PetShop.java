@@ -1,7 +1,7 @@
-package Loja;
+package Classes.Loja;
 
-import Animais.Animal;
-import Animais.Cachorro;
+import Classes.Animais.Animal;
+import Classes.Animais.Cachorro;
 
 public class PetShop {
     

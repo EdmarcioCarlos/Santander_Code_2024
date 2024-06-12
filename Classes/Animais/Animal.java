@@ -1,8 +1,7 @@
-package Animais;
+package Classes.Animais;
 
 public abstract class Animal {
 
-    static int numeroDeAnimais;
     protected String nome;
     protected String cor;
     protected float peso;
@@ -16,8 +15,6 @@ public abstract class Animal {
         this.peso = peso;
         this.humor = humor;
 
-
-        numeroDeAnimais++;
     } 
     
     //#region (get e set)
@@ -59,16 +56,6 @@ public abstract class Animal {
     {
         this.humor = humor;
     }
-    
-    public int getNumeroDeAnimais()
-    {
-        return this.numeroDeAnimais;
-    }
-
-    public void setNumeroDeAnimais(int numeroDeAnimais)
-    {
-        this.numeroDeAnimais = numeroDeAnimais;
-    }
     //#endregion
     //#region (Metodos universair dos animais)
     public void comer()
@@ -106,7 +93,6 @@ public abstract class Animal {
         System.out.println("A cor do animel e : " + cor);
         System.out.println("O peso do animal e : " + peso+ " kg");
         System.out.println("O humor atual do animal e : " + humor);
-        System.out.println("Existe um total de : " + numeroDeAnimais+ " registrados");
     }
     //#endregion
 }
