@@ -8,6 +8,7 @@ public class Cachorro {
     private float peso;
     private int tamanhoDoRabo;
     private String humor;
+    static int numeroDeCachorros;
 
     //#region(Gets e Sets)
     public String getNome()
@@ -69,7 +70,17 @@ public class Cachorro {
     {
         this.humor = humor;
     }
-//#endregion
+    
+    public int getNumeroDeCachorros()
+    {
+        return this.numeroDeCachorros;
+    }
+
+    public void setNumeroDeCachorros(int numeroDeCachorros)
+    {
+        this.numeroDeCachorros = numeroDeCachorros;
+    }
+    //#endregion
 
     //#region (Construtor)  
 
@@ -83,6 +94,8 @@ public class Cachorro {
         this.peso = peso;
         this.tamanhoDoRabo = tamanhoDoRabo;
         this.humor = humor;
+
+        numeroDeCachorros++;
     } 
     //#endregion
 
@@ -92,7 +105,7 @@ public class Cachorro {
         System.out.println("Estou comendo");
     }
 
-    public void Latir()
+    public void Soar()
     {
         System.out.println("AU AU");
     }
@@ -132,4 +145,10 @@ public class Cachorro {
         System.out.println("-----------------------------");
     }
     //#endregion
+
+    @Override
+    public String toString()
+    {
+        return "O nome do Cachorro e : "+nome;
+    }
 }
