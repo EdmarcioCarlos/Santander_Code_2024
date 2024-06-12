@@ -1,20 +1,33 @@
 import Animais.Cachorro;
+import Animais.Gato;
+import Animais.Passaro;
+import Loja.PetShop;
 
 public class Classes {
     public static void main(String[] args) {
 
-        Cachorro pet1 = new Cachorro("Ted","preto",25,1.5f,5,"Neutro");
-        System.out.println(pet1.getNumeroDeCachorros());
-        Cachorro pet2 = new Cachorro("Nick","preto",25,1.5f,5,"Neutro");
-        System.out.println(pet1.getNumeroDeCachorros());
+        PetShop petShop = new PetShop();
 
-        System.out.println(pet1);
-        System.out.println(pet2);
+        Cachorro cachoro01 = new Cachorro("Ted","preto",1.5f,"Neutro");
+        Gato gato01 = new Gato("Rajada", "Laranja", 0.5f, "Neutro"); 
+        Passaro passaro01 = new Passaro("Jack", "Azul", 1.5f, "Neutro");
 
-        /*
-        pet1.Print();
-        pet1.Interagir("Carinho");
-        pet1.Print();
-        */
+
+        
+        cachoro01.Print();
+        gato01.Print();
+        passaro01.Print();
+
+        petShop.darBanho(passaro01);
+        petShop.darVacina(gato01);
+        petShop.treinar(cachoro01);
+
+        cachoro01.Print();
+        gato01.Print();
+        passaro01.Print();
+
+        cachoro01.soar();
+        gato01.soar();
+        passaro01.soar();
     }
 }
